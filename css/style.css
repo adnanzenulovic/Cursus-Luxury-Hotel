@@ -1,0 +1,693 @@
+@import url(https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,700;1,400&display=swap);
+:focus {
+  box-shadow: 0 !important;
+  outline: 0 !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  animation-name: loadPage;
+  animation-delay: 0.5s;
+  animation-duration: 0.3s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
+}
+.bg-cc {
+  background: url(../img/slide-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+.bg-cc:before {
+  content: "";
+  width: 100%;
+  z-index: -10;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(161 135 84 / 0.86);
+}
+@keyframes loadPage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.btn,
+a {
+  font-family: "Red Rose", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  font-size: 15px !important;
+}
+.navbar-nav .btn,
+.navbar-nav a {
+  font-size: 13px;
+}
+.nav-item a:hover {
+  color: #a18754 !important;
+}
+.nav-item {
+  margin-right: 15px;
+}
+#nav_bar {
+  padding: 40 0 10 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  pointer-events: none;
+}
+#nav_bar a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+#nav_bar #logoAudi {
+  transition: 0.5s;
+}
+#nav_bar #menu {
+  margin: 0 30 0 50;
+}
+#video {
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+}
+#video video {
+  margin-left: -10%;
+}
+.logo {
+  max-width: 150px;
+}
+button.btn.btn-primary {
+  background-color: #a18754;
+  border: 0;
+}
+button.btn.btn-primary:hover {
+  background-color: #776a49;
+}
+button.btn.btn-primary a {
+  text-decoration: none !important;
+}
+.bg-light {
+  background: #fff !important;
+  border-bottom: 1px solid #f2f2f2;
+}
+.about-img {
+  background: url(../img/slide-01.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.blank-img {
+  min-height: 100vh;
+}
+.container.d-flex.h-100 {
+  padding: 50px;
+}
+h1 {
+  color: #a18755;
+  font-family: "Red Rose", cursive;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-align: center;
+}
+h1:after {
+  background: #a18755;
+  content: "";
+  width: 100px;
+  height: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #a18754 !important;
+}
+#map {
+  min-height: 100vh !important;
+}
+.mm-c {
+  width: 100% !important;
+}
+.form-group {
+  width: 100% !important;
+}
+form.was-validated {
+  width: 100%;
+}
+form.was-validated h1 {
+  text-align: center;
+}
+.naglaseno {
+  text-align: center;
+  color: #a18754;
+  font-size: 18px;
+}
+.pom-content {
+  margin-top: 14vh;
+}
+.ikonica {
+  text-align: center;
+}
+.ikonica span:before {
+  font-size: 43px !important;
+  color: #a18755;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ikonica h2 {
+  font-size: 16px;
+  color: #a18755;
+}
+.w100 {
+  width: 100%;
+}
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  background: 0 0;
+}
+.form-bg {
+  max-width: 60%;
+  margin: auto;
+}
+.form-bg input {
+  margin-bottom: 10px;
+  background: #fff !important;
+  border: 0 !important;
+}
+.mm-btn {
+  display: block;
+  width: 400px;
+  margin-bottom: 4px;
+  background-color: #65583c !important;
+  padding: 10px;
+}
+button.btn.btn-primary a {
+  color: #fff !important;
+}
+.forma-c {
+  max-width: 400px;
+  margin: auto;
+  color: #fff;
+}
+.forma-c label {
+  margin-top: 15px;
+}
+.forma-c button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.reg-btn {
+  background-color: #95784a;
+  border: 0;
+}
+.forma-c a {
+  color: #b7b7b7;
+}
+#video_banner {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 10 0 10 0;
+  align-content: center;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+}
+#video_banner p {
+  color: #fff;
+  text-align: center;
+}
+#button {
+  width: 10%;
+  margin-left: 45%;
+  padding: 10px;
+  border: solid thin #fff;
+  background-color: transparent;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+#button:hover {
+  background-color: #fff;
+  color: #000;
+}
+#scroll {
+  font-size: 25px;
+  margin-left: 1%;
+}
+#scroll img {
+  margin-bottom: 0.5%;
+  margin-left: -12px;
+}
+#heading {
+  font-size: 45px;
+}
+#separator {
+  font-family: Montserrat, sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 100%;
+}
+#separator p {
+  font-size: 150%;
+}
+#separator a {
+  text-decoration: none;
+}
+#slideshow_wrapper {
+  position: absolute;
+  top: 108%;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}
+#slideshow {
+  height: 80.5%;
+  width: 70%;
+  float: left;
+  background-color: #fff;
+}
+#slideshow img {
+  margin: auto;
+}
+#slideshow_veh {
+  height: 100%;
+  width: 60%;
+  float: left;
+}
+#slideshow_veh img {
+  margin-top: 20%;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: solid thin grey;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.active {
+  border-color: #fff;
+}
+.dot:hover {
+  border-color: #fff;
+}
+.button_move {
+  width: 15%;
+  height: 80.5%;
+  float: left;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.button_move:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+.button_move_veh {
+  margin-top: 20%;
+  width: 3%;
+  height: 7%;
+  float: left;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.button_move_veh:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+#under_slideshow_wrapper {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 188.5%;
+  background-color: #000;
+  z-index: 998;
+  font-family: Montserrat, sans-serif;
+}
+#under_slideshow_wrapper a {
+  text-decoration: none;
+}
+#under_slideshow_wrapper table {
+  width: 100%;
+}
+#tab1 {
+  width: 100%;
+  height: 100%;
+  background-color: #bb0a30;
+  color: #fff;
+  padding: 100px;
+  transition: font-size 0.2s ease, padding 0.2s ease;
+}
+#tab2 {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: 100px;
+  transition: font-size 0.2s ease, padding 0.2s ease;
+}
+#tab3 {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 100px;
+  transition: font-size 0.2s ease, padding 0.2s ease;
+}
+#tab4 {
+  width: 100%;
+  height: 100%;
+  background-color: #b7b0a9;
+  color: #000;
+  padding: 100px;
+  transition: font-size 0.2s ease, padding 0.2s ease;
+}
+#tab5 {
+  width: 100%;
+  height: 100%;
+  background-color: #bb0a30;
+  color: #fff;
+  padding: 100px;
+  transition: font-size 0.2s ease, padding 0.2s ease;
+}
+#tabImg {
+  width: 100%;
+  height: 100%;
+}
+#tabImg img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: Montserrat, sans-serif;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+#vehicle_holder {
+  width: 100%;
+  height: 85%;
+  font-family: Montserrat, sans-serif;
+}
+#naslov {
+  font-size: 400%;
+  padding-top: 10%;
+  padding-left: 70%;
+  margin-bottom: 0;
+}
+#quote {
+  font-size: 300%;
+  padding-left: 70%;
+  margin: 0;
+}
+#cena {
+  font-size: 200%;
+  margin: 0;
+  padding-left: 70%;
+}
+#verzija {
+  font-size: 120%;
+  margin-top: 2%;
+  margin-left: 70%;
+  border: solid #000 thin;
+  width: auto;
+  padding: 10 20 10 20;
+  cursor: pointer;
+}
+#verzija:hover {
+  background-color: #000;
+  color: #fff;
+}
+#regbox {
+  font-family: Montserrat, sans-serif;
+}
+#naruc select {
+  width: 25%;
+  margin-left: 37.5%;
+  background-color: #000;
+  border: solid thin #fff;
+  font-size: 200%;
+  text-align-last: center;
+  color: #fff;
+}
+#naruc button {
+  width: 15%;
+  margin-left: 42.5%;
+  padding: 0;
+  border: thin solid #fff;
+  background-color: transparent;
+  color: #fff;
+  transition: 0.15s;
+}
+#naruc button:hover {
+  background-color: #fff;
+  color: #000;
+}
+#newsBox {
+  background-color: #bb0a30;
+  width: 20%;
+  height: 100%;
+  font-family: Montserrat, sans-serif;
+  font-size: 120%;
+  position: fixed;
+  right: 0;
+  margin-right: -20%;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.12s;
+}
+#newsBox button {
+  margin-top: 5%;
+  width: 40%;
+  height: 5%;
+  margin-left: 30%;
+  border: solid #fff thin;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.15s;
+}
+#newsBox button:hover {
+  background-color: #fff;
+  color: #000;
+}
+#newsBox form {
+  margin-top: 60%;
+}
+#newsic {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  cursor: pointer;
+  margin-right: 0;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.12s;
+  animation-name: newsic;
+  animation-delay: 1.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+#korisniciTab {
+  display: none;
+  color: #222;
+  background: #fff;
+  border: 0;
+  max-width: 750px;
+}
+#korisniciTab a {
+  text-decoration: none;
+  color: #a18754;
+}
+#narudzbineTab {
+  color: #222;
+  background: #fff;
+  border: 0;
+  max-width: 750px;
+  display: none;
+}
+#narudzbineTab a {
+  text-decoration: none;
+  color: #a18754;
+}
+#newsTab {
+  color: #222;
+  background: #fff;
+  border: 0;
+  max-width: 750px;
+  display: none;
+}
+#newsTab a {
+  text-decoration: none;
+  color: #a18754;
+}
+#pitanjaTab {
+  color: #222;
+  background: #fff;
+  border: 0;
+  max-width: 750px;
+  display: none;
+}
+#pitanjaTab a {
+  text-decoration: none;
+  color: #a18754;
+}
+#stanjeTab {
+  background-color: #141414;
+  display: none;
+  border: solid;
+  color: #fff;
+}
+#stanjeTab a {
+  color: #add8e6;
+  text-decoration: none;
+}
+#stanjeDet {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 20%;
+  height: 10%;
+  text-align: center;
+}
+#stanjeA {
+  color: #fff;
+  margin: 0 0 0 48%;
+  font-size: 200%;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10010;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+.open-menu {
+  position: fixed;
+  bottom: 14px;
+  right: 14px;
+  z-index: 1001;
+  background-color: rgb(161 135 84 / 0.85);
+  color: #fff;
+  padding: 20px;
+  font-size: 19px !important;
+  font-family: "Red Rose", cursive;
+  text-transform: uppercase;
+  padding: 10px 23px;
+  border-radius: 6px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
